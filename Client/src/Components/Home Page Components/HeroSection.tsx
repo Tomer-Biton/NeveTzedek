@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import '../../FrontendAssets/Images/product1img.jpg'
+import '../../FrontendAssets/Images/product3img.jpg'
+import '../../FrontendAssets/Images/product4img.jpg'
 
 const images = [
-  'https://www.banamashkaot.co.il/images/itempics/Page_Thumb_560.jpg?08022024103745',
-  'https://www.banamashkaot.co.il/images/itempics/Page_Thumb_499.jpg?03092023153324',
-  'https://www.banamashkaot.co.il/images/itempics/Page_Thumb_626.jpg?17062024115719'
+  '../../FrontendAssets/images/product1img.jpg',
+  '../../FrontendAssets/images/product3img.jpg',
+  '../../FrontendAssets/images/product4img.jpg',
 ];
 
 const HeroSection = () => {

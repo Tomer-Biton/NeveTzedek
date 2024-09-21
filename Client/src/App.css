@@ -142,10 +142,10 @@ a {
 
 .logoLink {
   content: "";
-  background-image: url("./FrontendAssets/Images/BanaLogoSvgWithBlackSubText.png");
-  background-size: contain;
+  background-image: url("FrontendAssets/Images/chocolatebarimg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   max-width: 15dvw;
   height: 12.5dvh;
   aspect-ratio: 1/1;
@@ -237,8 +237,8 @@ a {
   justify-content: center;
   align-items: center;
   background-image: url(https://www.banamashkaot.co.il/images/itempics/Page_Thumb_560.jpg?08022024103745);
-  background-position: top;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   min-width: none;
   aspect-ratio: 728/191;
 }
@@ -283,21 +283,21 @@ a {
 }
 
 .WineSectionIMG {
-  background-image: url('./FrontendAssets/Images/WineImg.webp');
+  background-image: url('./FrontendAssets/Images/newcollectionmangoimg.jpg');
 }
 
 .WhiskeySectionIMG {
-  background-image: url('./FrontendAssets/Images/WhiskeyCategoryImg.webp');
+  background-image: url('./FrontendAssets/Images/newcollectionkiwiimg.jpg');
 
 }
 
 .VodkaSectionIMG {
-  background-image: url('./FrontendAssets/Images/VodkaImg.webp');
+  background-image: url('./FrontendAssets/Images/logoimg.jpg');
 
 }
 
 .HardLiquorSectionIMG {
-  background-image: url('./FrontendAssets/Images/HardLiquoreImg.webp');
+  background-image: url('./FrontendAssets/Images/mainfbimg.jpg');
 }
 
 /* @@@@@@@@@@@@ */
