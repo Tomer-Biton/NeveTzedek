@@ -1,38 +1,359 @@
-.App {
+:root {
+  /* Colors */
+  --BanaRed: #DF1E26;
+  --BanaGray: #F5F5F5;
+  --BanaBlack: #000000;
+  /* Font Weights */
+  --FontW1: 100;
+  --FontW2: 400;
+  --FontW3: 700;
+  /* Font Sizes */
+  --FontMultiplier: 1;
+  --FontXS: calc(0.75dvw * var(--FontMultiplier));
+  --FontS: calc(0.95dvw * var(--FontMultiplier));
+  --FontM: calc(1.75dvw * var(--FontMultiplier));
+  --FontL: calc(2.5dvw * var(--FontMultiplier));
+  --FontHeader: calc(3dvw * var(--FontMultiplier));
+  /* Icon Links */
+  --LocationIcon: url("./FrontendAssets/Images/LocationPin.png");
+}
+
+/* @@@@@@@@@@@@ */
+/* Reset */
+/* @@@@@@@@@@@@ */
+* {
+  margin: 0;
+  padding: 0;
+  /* Website Fonts */
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--FontW1);
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: var(--FontM);
+  color: var(--BanaBlack);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Icon Management */
+
+.linkIconImage {
+  background-size: var(--FontL);
+  background-repeat: no-repeat;
+  height: var(--FontL);
+  aspect-ratio: 1/1;
+}
+
+.LocationIcon {
+  background-image: url('./FrontendAssets/Images/LocationPin.png');
+}
+
+.HeartIcon {
+  background-image: url('./FrontendAssets/Images/Heart.png');
+}
+
+.LoginIcon {
+  background-image: url('./FrontendAssets/Images/PersonIcon.png');
+}
+
+.CartIcon {
+  background-image: url('./FrontendAssets/Images/Cart.png');
+}
+
+.SearchIcon {
+  background-image: url('./FrontendAssets/Images/Search.png');
+}
+
+/* @@@@@@@@@@@@ */
+/* Scroll bar settings */
+/* @@@@@@@@@@@@ */
+
+/* Target all scrollbars */
+::-webkit-scrollbar {
+  width: 0.5dvw;
+  /* width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--BanaGray);
+  /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--BanaRed);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DF1E2675;
+  /* color of the handle when hovered */
+}
+
+
+/* @@@@@@@@@@@@ */
+/* @@@@@@@@@@@@ */
+/* Home Page */
+/* @@@@@@@@@@@@ */
+/* @@@@@@@@@@@@ */
+.TopBannerMessage {
+  background-color: var(--BanaBlack);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bannerTopText {
+  color: var(--BanaGray);
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: var(--FontS);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bannerSmallNote {
+  font-size: var(--FontXS);
+  color: var(--BanaGray);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* @@@@@@@@@@@@ */
+/* Navbar */
+/* @@@@@@@@@@@@ */
+.navbar-container {
+  height: 12.5dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.htmlLink {
+  font-size: var(--FontM);
+  font-weight: var(--FontW2);
+  transition: 300ms;
+}
+
+.htmlLink:hover {
+  font-size: calc(var(--FontM) * 1.1);
+}
+
+.logoLink {
+  content: "";
+  background-image: url("./FrontendAssets/Images/BanaLogoSvgWithBlackSubText.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 15dvw;
+  height: 12.5dvh;
+  aspect-ratio: 1/1;
+  background-color: var(--BanaGray);
+}
+
+.navOptions {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: var(--BanaGray);
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.ExtrasAndSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100%; */
+  height: 49%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbarHr {
+  width: 99%;
+  height: 2%;
+  background-color: var(--BanaBlack);
+}
+
+.navCategories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2dvw;
+  background-color: var(--BanaGray);
+  width: 100%;
+  height: 49%;
+}
+
+.navExtras {
+  display: flex;
+  flex-direction: row;
+  gap: var(--FontL);
+}
+
+.linkAndIcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: calc(var(--FontS) * 0.5);
+}
+
+.nav-item {
+  list-style: none;
+}
+
+#redText {
+  color: var(--BanaRed) !important;
+  text-shadow: 1px 1px 1px calc(var(--BanaRed));
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: var(--BanaGray);
+  /* width: 100%; */
+}
+
+.searchInput {
+  width: 60%;
+  border-radius: 5px;
+  border: 1px solid #00000075;
+  padding: 5px;
+  font-size: calc(var(--FontM) * 0.75);
+  text-align: center;
+}
+
+/* @@@@@@@@@@@@ */
+/* Hero Section */
+/* @@@@@@@@@@@@ */
+.HeroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://www.banamashkaot.co.il/images/itempics/Page_Thumb_560.jpg?08022024103745);
+  background-position: top;
+  background-size: cover;
+  min-width: none;
+  aspect-ratio: 728/191;
+}
+
+.ControlMarkers {
+  display: flex;
+  gap: var(--FontXS);
+  position: relative;
+  align-self: center;
+  bottom: -40%;
+}
+
+.ControlMarker {
+  /* background-color: white; */
+  width: var(--FontM);
+  height: var(--FontM);
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+/* @@@@@@@@@@@@ */
+/* Category Nav Section */
+/* @@@@@@@@@@@@ */
+.ImagesForProductsCategories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  flex-wrap: nowrap;
+  background-color: var(--BanaGray);
+}
+
+.ProductsSectionImage {
+  aspect-ratio: 473/250;
+  object-fit: cover;
+  background-size: cover;
+  min-width: 250px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.WineSectionIMG {
+  background-image: url('./FrontendAssets/Images/WineImg.webp');
+}
+
+.WhiskeySectionIMG {
+  background-image: url('./FrontendAssets/Images/WhiskeyCategoryImg.webp');
+
+}
+
+.VodkaSectionIMG {
+  background-image: url('./FrontendAssets/Images/VodkaImg.webp');
+
+}
+
+.HardLiquorSectionIMG {
+  background-image: url('./FrontendAssets/Images/HardLiquoreImg.webp');
+}
+
+/* @@@@@@@@@@@@ */
+/* Best Sellers Product Section */
+/* @@@@@@@@@@@@ */
+
+
+
+/* @@@@@@@@@@@@ */
+/* Media Query */
+/* @@@@@@@@@@@@ */
+@media screen and (max-width: 1200px) {
+  :root {
+    --FontMultiplier: 1.5;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 1080px) {
+  .ImagesForProductsCategories {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    /* Font Sizes */
+    --FontMultiplier: 1.75;
+    --FontXS: calc(0.65dvw * var(--FontMultiplier));
+    --FontS: calc(0.75dvw * var(--FontMultiplier));
+    --FontM: calc(1.5dvw * var(--FontMultiplier));
+    --FontL: calc(2dvw * var(--FontMultiplier));
+    --FontHeader: calc(2.5dvw * var(--FontMultiplier));
+  }
+
+  .bannerTopText,
+  .bannerSmallNote {
+    font-size: calc(var(--FontS) * 1.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navCategories {
+    justify-content: space-around;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --FontMultiplier: 2;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  :root {
+    --FontMultiplier: 0.9;
   }
 }

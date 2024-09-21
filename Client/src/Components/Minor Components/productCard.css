@@ -1,0 +1,41 @@
+.ProductCardName {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.ProductCardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ProductImageNameWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ProductCardFavBtn {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 1em;
+  box-shadow: 0 0 1em 0.1em #00000020;
+  transition: 300ms;
+}
