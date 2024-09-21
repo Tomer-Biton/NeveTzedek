@@ -1,0 +1,92 @@
+{
+  "flavors": {
+    "chocolate": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "chocolate.jpg"
+    },
+    "vanilla": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "vanilla.jpg"
+    },
+    "strawberry": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "strawberry.jpg"
+    },
+    "mint": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "mint.jpg"
+    },
+    "caramel": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "caramel.jpg"
+    },
+    "coffee": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "coffee.jpg"
+    },
+    "peanut butter": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "peanut-butter.jpg"
+    },
+    "pistachio": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "pistachio.jpg"
+    },
+    "rocky road": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "rocky-road.jpg"
+    },
+    "cookies and cream": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "cookies-and-cream.jpg"
+    },
+    "rainbow sherbet": {
+      "price": {
+        "small": 2.5,
+        "medium": 3.5,
+        "large": 4.5
+      },
+      "image": "rainbow-sherbet.jpg"
+    }
+  }
+}
