@@ -54,6 +54,18 @@ html {
   aspect-ratio: 1/1;
 }
 
+.LocationIcon,
+.HeartIcon,
+.LoginIcon,
+.CartIcon,
+.SearchIcon {
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  color: var(--NTBlack);
+  z-index: 2;
+}
+
 .LocationIcon {
   background-image: url('./FrontendAssets/Images/LocationPin.png');
 }
@@ -147,10 +159,10 @@ html {
 
 .logoLink {
   content: "";
-  background-image: url("FrontendAssets/Images/chocolatebarimg.jpg");
+  background-image: url("../public/favicon.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 135%;
+  background-size: 100%;
   max-width: 15dvw;
   height: 12.5dvh;
   aspect-ratio: 1/1;
@@ -202,7 +214,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: calc(var(--FontS) * 0.5);
+  gap: 0.5em;
 }
 
 .nav-item {

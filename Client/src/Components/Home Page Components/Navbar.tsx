@@ -27,19 +27,19 @@ const Navbar = () => {
                 href='#'
                 className='nav-links linkWIcon'
                 iconImage='HeartIcon linkIconImage'>
-                מועדפים
+                דרושים
               </HtmlLinkWIcon>
               <HtmlLinkWIcon
                 href='#'
                 className='nav-links linkWIcon'
                 iconImage='LoginIcon linkIconImage'>
-                התחברות
+                אודותינו
               </HtmlLinkWIcon>
               <HtmlLinkWIcon
                 href='#'
                 className='nav-links linkWIcon'
                 iconImage='CartIcon linkIconImage'>
-                עגלה
+                תפריט
               </HtmlLinkWIcon>
             </ul>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
           <hr className='navbarHr' />
 
           {/* this is the users navigation between the product categories */}
-          <ul className='navCategories'>
+          {/* <ul className='navCategories'>
             <li className='nav-item'>
               <HtmlLink href='#' className='nav-links' id='redText' />
             </li>
@@ -91,7 +91,7 @@ const Navbar = () => {
                 חריטות
               </HtmlLink>
             </li>
-          </ul>
+          </ul> */}
 
         </div>
       </nav >
