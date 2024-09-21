@@ -54,11 +54,7 @@ const Navbar = () => {
           {/* this is the users navigation between the product categories */}
           <ul className='navCategories'>
             <li className='nav-item'>
-              <HtmlLink href='#' className='nav-links' id='redText'
-                <subLink >
-              }>
-                מבצעים
-              </HtmlLink>
+              <HtmlLink href='#' className='nav-links' id='redText' />
             </li>
             <li className='nav-item'>
               <HtmlLink href='#' className='nav-links'>

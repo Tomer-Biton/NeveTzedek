@@ -34,7 +34,7 @@ const HtmlLink: React.FC<LinkProps> = ({ href, className, subLinks, id, children
           top: '100%',
           transition: '3000ms ease 3000ms'
         }}
-      ><subLink /></div>}
+      ></div>}
     </a>
   )
 }
