@@ -1,8 +1,8 @@
 :root {
   /* Colors */
-  --BanaRed: #DF1E26;
-  --BanaGray: #F5F5F5;
-  --BanaBlack: #000000;
+  --NTLBlue: #cfe6fc;
+  --NTPink: #ffe5fb;
+  --NTBlack: #000000;
   /* Font Weights */
   --FontW1: 100;
   --FontW2: 400;
@@ -25,19 +25,24 @@
   margin: 0;
   padding: 0;
   /* Website Fonts */
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik Bubbles", system-ui, "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: var(--FontW1);
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
   font-size: var(--FontM);
-  color: var(--BanaBlack);
+  color: var(--NTBlack);
 }
 
 a {
   cursor: pointer;
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--NTLBlue);
 }
 
 /* Icon Management */
@@ -81,13 +86,13 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--BanaGray);
+  background: var(--NTPink);
   /* color of the track */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--BanaRed);
+  background: var(--NTLBlue);
 }
 
 /* Handle on hover */
@@ -103,12 +108,12 @@ a {
 /* @@@@@@@@@@@@ */
 /* @@@@@@@@@@@@ */
 .TopBannerMessage {
-  background-color: var(--BanaBlack);
+  background-color: var(--NTBlack);
   text-align: center;
 }
 
 .bannerTopText {
-  color: var(--BanaGray);
+  color: var(--NTPink);
   padding: 0.5em;
   font-weight: bold;
   font-size: var(--FontS);
@@ -116,7 +121,7 @@ a {
 
 .bannerSmallNote {
   font-size: var(--FontXS);
-  color: var(--BanaGray);
+  color: var(--NTPink);
 }
 
 /* @@@@@@@@@@@@ */
@@ -145,11 +150,11 @@ a {
   background-image: url("FrontendAssets/Images/chocolatebarimg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 135%;
   max-width: 15dvw;
   height: 12.5dvh;
   aspect-ratio: 1/1;
-  background-color: var(--BanaGray);
+  background-color: var(--NTPink);
 }
 
 .navOptions {
@@ -157,7 +162,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--BanaGray);
+  background-color: var(--NTPink);
   width: 100%;
   height: 100%;
 }
@@ -174,7 +179,7 @@ a {
 .navbarHr {
   width: 99%;
   height: 2%;
-  background-color: var(--BanaBlack);
+  background-color: var(--NTBlack);
 }
 
 .navCategories {
@@ -182,7 +187,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 2dvw;
-  background-color: var(--BanaGray);
+  background-color: var(--NTPink);
   width: 100%;
   height: 49%;
 }
@@ -205,8 +210,8 @@ a {
 }
 
 #redText {
-  color: var(--BanaRed) !important;
-  text-shadow: 1px 1px 1px calc(var(--BanaRed));
+  color: var(--NTLBlue) !important;
+  text-shadow: 1px 1px 1px calc(var(--NTLBlue));
 }
 
 .searchBar {
@@ -215,7 +220,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  background-color: var(--BanaGray);
+  background-color: var(--NTPink);
   /* width: 100%; */
 }
 
@@ -236,11 +241,11 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(https://www.banamashkaot.co.il/images/itempics/Page_Thumb_560.jpg?08022024103745);
-  background-position: center;
-  background-size: contain;
+  background-image: url(https://www.NTmashkaot.co.il/images/itempics/Page_Thumb_560.jpg?08022024103745);
+  background-position: bottom -100px center;
+  background-size: 100%;
   min-width: none;
-  aspect-ratio: 728/191;
+  aspect-ratio: 720/220;
 }
 
 .ControlMarkers {
@@ -270,16 +275,43 @@ a {
   gap: 1em;
   padding: 1em;
   flex-wrap: nowrap;
-  background-color: var(--BanaGray);
+  background-color: var(--NTPink);
+}
+
+.imageWText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--NTLBlue);
+  aspect-ratio: 325/250;
+  object-fit: cover;
+  background-size: 78%;
+  background-position: center;
+  min-width: 150px;
+  width: 100%;
+  max-width: 200px;
 }
 
 .ProductsSectionImage {
-  aspect-ratio: 473/250;
+  aspect-ratio: 325/250;
   object-fit: cover;
-  background-size: cover;
-  min-width: 250px;
+  background-size: 78%;
+  background-position: center;
+  min-width: 150px;
   width: 100%;
-  max-width: 400px;
+  max-width: 200px;
+  opacity: 0.6;
+}
+
+.textOnImg {
+  position: relative;
+  align-self: center;
+  bottom: 60%;
+  height: 0;
+  z-index: 2;
+  font-size: xx-large;
+  color: var(--NTLBlue);
+  text-shadow: #000 0px 0px 16px;
 }
 
 .WineSectionIMG {

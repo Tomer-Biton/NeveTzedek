@@ -1,12 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import '../../FrontendAssets/Images/product1img.jpg'
-import '../../FrontendAssets/Images/product3img.jpg'
-import '../../FrontendAssets/Images/product4img.jpg'
 
 const images = [
-  '../../FrontendAssets/images/product1img.jpg',
-  '../../FrontendAssets/images/product3img.jpg',
-  '../../FrontendAssets/images/product4img.jpg',
+  'https://lh3.googleusercontent.com/p/AF1QipNznFZtAIjrEfBq8gZrBfdOn707rEQf7jq4sIaF=s1360-w1360-h1020',
+  'https://lh3.googleusercontent.com/p/AF1QipPllfc6r3u6WwSzy9zMCfr5gVAeu1PNiZcx0cvH=s1360-w1360-h1020',
+  'https://scontent.ftlv1-1.fna.fbcdn.net/v/t1.6435-9/31064359_1073845186088272_1443930256447635456_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=tyzcsDKA6oUQ7kNvgEGO7xE&_nc_ht=scontent.ftlv1-1.fna&oh=00_AYCratmQHaAPiytIwSFwYok9M2QdaTCPeIhbE8qjgbCwjA&oe=67161F5B'
 ];
 
 const HeroSection = () => {
