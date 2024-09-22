@@ -126,9 +126,9 @@ html {
 
 .bannerTopText {
   color: var(--NTPink);
+  opacity: 0.8;
   padding: 0.5em;
-  font-weight: bold;
-  font-size: var(--FontS);
+  font-size: calc(var(--FontS) * 1.1);
 }
 
 .bannerSmallNote {

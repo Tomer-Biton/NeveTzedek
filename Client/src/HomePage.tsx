@@ -8,10 +8,10 @@ const HomePage = () => {
     <>
       <div className='TopBannerMessage'>
         <p className='bannerTopText'>
-          משלוח חינם בקנייה מעל 319 ש"ח
-          <br /><span className="bannerSmallNote">
+          משלוח מבוצע ע"י חברת WOLT בלבד
+          {/* <br /><span className="bannerSmallNote">
             *בכפוף לתקנון המשלוחים. עקב המצב הביטחוני ייתכנו עיכובים באספקת המוצרים
-          </span>
+          </span> */}
         </p>
       </div>
 
